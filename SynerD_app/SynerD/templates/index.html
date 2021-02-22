@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="synerd.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>SynerD: Synergy of Diaspora</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/static/synerdlogo.png" alt="SynerD Logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">Members</a></li>
+            <li><a class="btn" href="join.html">Join Us!</a></li>
+            <li><a class="btn" href="signIn.html">Sign In</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-heading">Synergy of Diaspora</h1>
+            <h2>Let's Serve Purposefully</h2>
+        </div>
+    </section>
+
+    <section>
+        <div class="about-diaspora">
+            <h1>What is Diaspora?</h1>
+            <p>Until recently diaspora was thought to be a fairly new word in English to describe a very old thing 
+                (its first, and principal, meaning relates to the settling of the Jewish people outside of Palestine 
+                after the Babylonian exile thousands of years ago). However, recent research has found that the word is 
+                quite a bit older than previously thought. It can be found as far back as 1594, in a translation of Lambert 
+                Daneau’s A Fruitfull Commentarie vpon the Twelue Small Prophets: “This scattering abrode of the Iewes, 
+                as it were an heauenly sowing, fell out after their returne from the captiuitie of Babylon … 
+                they are called Diaspora, that is, a scattering or sowing abrode.” Diaspora is descended from the Greek 
+                word diaspeirein, meaning “to scatter, spread about.”
+            </p>
+        </div>
+    </section>
+
+    <section class="feature">
+        <div class="feature-content">
+            <h1>Feature News</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis earum nemo accusamus, 
+                laudantium fugit inventore porro velit soluta iusto provident temporibus quia consequuntur 
+                repellat officia debitis voluptatem, libero commodi a. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Excepturi reiciendis ratione sapiente sed id! Suscipit dolore, soluta fugiat corrupti exercitationem
+                perspiciatis velit molestias architecto animi iste laudantium nisi, esse quasi omnis doloremque. Modi, a. 
+                Voluptate fugiat numquam quos debitis reiciendis.
+            </p>
+        </div>
+        <div class="feature-content">
+            <h1>Announcements</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores quod at, quasi, id quos 
+                maxime laborum laudantium tenetur ea quae saepe! Numquam nesciunt obcaecati magni nemo reiciendis, 
+                laudantium ducimus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt accusantium
+                unde adipisci hic suscipit autem iste dignissimos, nesciunt impedit vel sint quod odit qui recusandae
+                doloremque nemo architecto. Ratione, nostrum ex laborum quaerat officia quia nesciunt mollitia fugit 
+                dicta rerum.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo">
+            <img src="/static/synerdlogo.png" alt="SynerD Logo">
+        </div>
+        <div class="footer-content">
+            <div class="address">
+                <h1>Address</h1>
+                <p>1234 Madeup Ave.</p>
+                <p>Anywhere USA 55555</p>
+            </div>
+            <div class="phone">
+                <h1>Phone</h1>
+                <p>+1 888-8888</p>
+            </div>
+            <div class="email">
+                <h1>Email</h1>
+                <p>SynerD@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.onload = function() {
+            var startPos;
+            var geoSuccess = function(position) {
+            startPos = position;
+            document.getElementById('startLat').innerHTML = startPos.coords.latitude;
+            document.getElementById('startLon').innerHTML = startPos.coords.longitude;
+        };
+            navigator.geolocation.getCurrentPosition(geoSuccess);
+    };
+    </script>
+</body>
+</html>

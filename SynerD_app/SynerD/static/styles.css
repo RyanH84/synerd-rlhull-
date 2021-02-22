@@ -1,0 +1,364 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: rgb(255, 255, 255);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo img {
+    width: 50%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.btn {
+    background: green;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+ul a:hover {
+    color: green;
+    transition: 150ms ease-in;
+}
+
+.btn:hover {
+    background-color: rgb(89, 168, 89);
+    color: white;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: url(/static/ben-white-gEKMstKfZ6w-unsplash.jpg) rgba(0,0,0,0.3);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+.hero-heading {
+    font-family: 'Oleo Script', cursive;
+    color: rgb(236, 236, 236);
+    font-size: 85px;
+    letter-spacing: 5px;
+    text-shadow: rgb(78, 78, 78) 2px 3px 15px;
+    border-left: 2px solid white;
+    padding: 10px;
+}
+
+.hero-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h2 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 5px;
+    text-shadow: rgb(78, 78, 78) 2px 3px 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.login {
+    background: green;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.login:hover {
+    background-color: rgb(89, 168, 89);
+    color: white;
+    cursor: pointer;
+}
+
+.about-diaspora {
+    height: 500px;
+    padding: 0px 60px;
+}
+
+.about-diaspora h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    padding: 50px 0px;
+    letter-spacing: 3px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about-diaspora p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+
+.feature {
+    display: flex;
+    padding: 0px 20px;
+    background: #91CCFF;
+    height: 450px;
+}
+
+.feature-content {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px 10px;
+}
+
+.feature-content h1 {
+    font-family: 'Oleo Script', cursive;
+    font-size: 40px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+
+.feature-content p {
+    font-size: 14px;
+    padding: 0px 50px;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer-content h1 {
+    font-size: 20px;
+    padding: 5px 0px;
+}
+
+/* Join US page starts here */
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 500px;
+    overflow: hidden;
+    background: rgba(0,0,0,0.3);
+}
+
+.hero-content h1 {
+    border: none;
+    color: white;
+}
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Registration Form */
+.join-us-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 800px;
+    height: 800px;
+}
+
+.user-reg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.image {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #91CCFF;
+    transition: 0.5s;
+}
+
+.image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reg-form {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+}
+
+form input {
+   position: relative;
+   width: 100%;
+   padding: 10px;
+   border: none;
+   box-shadow: none;
+   outline: none;
+   margin: 8px 0;
+   font-size: 14px;
+   letter-spacing: 1.5px;
+   font-weight: 300;
+   background: #f5f5f5;
+}
+
+form input[type="submit"] {
+   max-width: 100px;
+   cursor: pointer;
+   font-size: 14px;
+   font-weight: 500;
+   letter-spacing: 1.5px;
+   transition: 0.5s;
+   background-color: green;
+   color: white; 
+}
+
+form input[type="radio"] {
+    max-width: 50px;
+}
+
+form h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 15px;
+    letter-spacing: 1.5px;
+    margin-top: -5px;
+}
+
+.sign-in-section {
+    position: relative;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.error {
+    color: red;
+}
+
+/* Sign In Page */
+
+.sign-in-container {
+    border: 2px solid black;
+    padding: 50px;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 18s slider infinite;
+}
+
+figure img {
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider {
+   0% {
+       left: 0;
+   }
+   20% {
+       left: 0;
+   }
+   25% {
+       left: -100%;
+   }
+   45% {
+       left: -100%; 
+   }
+   50% {
+       left: -200%;
+   }
+   70% {
+       left: -200%;
+   }
+   75% {
+       left: -300%;
+   }
+   95% {
+       left: -300%;
+   }
+   100% {
+       left: -400%;
+   }
+}
+
+
+
